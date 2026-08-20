@@ -552,20 +552,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <!-- FAQ Accordion Initialization -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach(function(faqItem) {
-        faqItem.addEventListener('click', function() {
-          var parent = faqItem.closest('.faq-item');
-          if (parent) {
-            parent.classList.toggle('faq-active');
-          }
-        });
-      });
-    });
-  </script>
 </body>
 
 </html>
