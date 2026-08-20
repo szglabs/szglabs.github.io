@@ -1,6 +1,3 @@
 User-agent: *
-Disallow: /vcard/
-Disallow: /assets/contacts/
 Allow: /
-
 Sitemap: https://szglabs.com/sitemap.xml
