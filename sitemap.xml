@@ -9,32 +9,32 @@
 
 <url>
   <loc>https://szglabs.com/</loc>
-  <lastmod>2026-03-08T00:00:00+00:00</lastmod>
+  <lastmod>2026-08-20T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://szglabs.com/las-vegas-it-consulting.html</loc>
+  <lastmod>2026-08-20T00:00:00+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://szglabs.com/security.html</loc>
+  <lastmod>2026-08-20T00:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
   <loc>https://szglabs.com/privacy-policy.html</loc>
-  <lastmod>2026-03-08T00:00:00+00:00</lastmod>
+  <lastmod>2026-08-20T00:00:00+00:00</lastmod>
   <priority>0.50</priority>
 </url>
 <url>
   <loc>https://szglabs.com/terms-of-use.html</loc>
-  <lastmod>2026-03-08T00:00:00+00:00</lastmod>
+  <lastmod>2026-08-20T00:00:00+00:00</lastmod>
   <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://szglabs.com/security.html</loc>
-  <lastmod>2026-03-08T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://szglabs.com/subprocessors.html</loc>
-  <lastmod>2026-03-12T00:00:00+00:00</lastmod>
+  <lastmod>2026-08-20T00:00:00+00:00</lastmod>
   <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://szglabs.com/las-vegas-it-consulting.html</loc>
-  <lastmod>2026-03-28T00:00:00+00:00</lastmod>
-  <priority>0.70</priority>
 </url>
 </urlset>
