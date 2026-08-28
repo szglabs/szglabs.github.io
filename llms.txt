@@ -1,0 +1,69 @@
+# SZG Labs
+
+> SZG Labs, LLC is a senior engineering consultancy headquartered in Las Vegas, Nevada. We deliver professional services in Agentic AI workflow automation, Odoo ERP architecture, DevOps, custom software development, data pipeline engineering, and enterprise systems integration for mid-market and enterprise clients across the United States.
+
+## About
+
+SZG Labs provides senior engineering teams and professional services. Every engagement is staffed 100% with senior engineers who have built and operated production systems at scale. We do not use junior engineers, account intermediaries, or offshore handoffs. Clients work directly with technical practitioners.
+
+Founded and led by Christopher O'Neal (Managing Member & Principal Architect), SZG Labs operates from Las Vegas, NV and serves clients nationally across e-commerce, distribution, retail, and technology industries.
+
+## Core Services
+
+- **Agentic AI & Workflow Automation**: We build autonomous AI agent workflows that replace manual data entry, order processing, and operational coordination. Our automations connect directly to ERP, CRM, and warehouse management systems via custom API pipelines.
+- **Odoo ERP Architecture & Implementation**: Full-lifecycle Odoo v17–19 architecture, migration, customization, and module development. We handle complex multi-company setups, inventory management, manufacturing workflows, and third-party integrations.
+- **DevOps Engineering**: CI/CD pipeline design, infrastructure-as-code (Terraform), container orchestration (Kubernetes, Docker), and cloud infrastructure on AWS.
+- **Custom Software Development**: Production-ready backend services, APIs, and internal tooling in Python, Go, TypeScript, and Node.js.
+- **Data Pipeline Engineering**: High-throughput ETL/ELT pipelines, data warehouse architecture, and real-time data exchange layers using PostgreSQL, pgvector, and event-driven architectures.
+- **Enterprise Integration**: EDI (ANSI X12 850/856/810/855), REST/GraphQL API integration, and system-to-system connectivity between ERP, WMS, eCommerce, 3PL, and trading partner platforms.
+- **AI Systems & LLM Integration**: Retrieval-Augmented Generation (RAG) architectures, private LLM orchestration via AWS Bedrock and OpenAI/Anthropic APIs, vector search (pgvector, OpenSearch), and autonomous agent workflows.
+
+## Technology Stack
+
+- **Cloud & Infrastructure**: AWS (EC2, ECS, Lambda, RDS, S3, Bedrock), Terraform, Kubernetes, Docker, GitHub Actions
+- **Languages**: Python, Go, TypeScript, Node.js
+- **AI & Data**: pgvector, OpenSearch, AWS Bedrock, OpenAI API, Anthropic API, PostgreSQL, ETL pipelines
+- **ERP & Integration**: Odoo v17–19, EDI ANSI X12, REST, GraphQL, AS2, SFTP
+- **Security**: AES-256 encryption at rest, TLS 1.2+ in transit, least-privilege IAM, MFA enforcement
+
+## Engagement Models
+
+- **Project-Based**: Fixed scope, deliverables, and timelines for implementations and builds.
+- **Dedicated Engineering Pods**: Senior engineers embedded into your team (staff augmentation).
+- **Retainer-Based Advisory**: Ongoing architecture, maintenance, and advisory support.
+
+All engagements begin with a free 30-minute technical consultation.
+
+## Legal & Compliance
+
+- **Privacy Policy**: https://szglabs.com/privacy-policy.html
+- **Security Practices**: https://szglabs.com/security.html
+- **Terms of Use**: https://szglabs.com/terms-of-use.html
+- **Approved Subprocessors**: https://szglabs.com/subprocessors.html
+- **Data Processing Agreement (DPA)**: Available upon request for all engagements.
+
+SZG Labs is CPRA-compliant, GDPR-aware, and does not sell or share customer personal data for cross-context behavioral advertising.
+
+## Contact
+
+- **Website**: https://szglabs.com
+- **Email**: sales@szglabs.com
+- **Phone**: +1 (702) 530-3654
+- **Address**: 930 S 4th St, Ste 209 #6239, Las Vegas, NV 89101
+- **Consultation**: https://calendly.com/szglabs-sales/30min
+
+## Regional Pages
+
+- [Las Vegas IT Consulting](https://szglabs.com/las-vegas-it-consulting.html)
+- [Los Angeles IT Consulting](https://szglabs.com/los-angeles-it-consulting.html)
+- [San Francisco IT Consulting](https://szglabs.com/san-francisco-it-consulting.html)
+- [Seattle IT Consulting](https://szglabs.com/seattle-it-consulting.html)
+- [Phoenix IT Consulting](https://szglabs.com/phoenix-it-consulting.html)
+- [Salt Lake City IT Consulting](https://szglabs.com/salt-lake-city-it-consulting.html)
+- [Austin IT Consulting](https://szglabs.com/austin-it-consulting.html)
+- [Dallas IT Consulting](https://szglabs.com/dallas-it-consulting.html)
+- [New York IT Consulting](https://szglabs.com/new-york-it-consulting.html)
+- [Boston IT Consulting](https://szglabs.com/boston-it-consulting.html)
+- [Washington D.C. IT Consulting](https://szglabs.com/washington-dc-it-consulting.html)
+- [Atlanta IT Consulting](https://szglabs.com/atlanta-it-consulting.html)
+- [Miami IT Consulting](https://szglabs.com/miami-it-consulting.html)
