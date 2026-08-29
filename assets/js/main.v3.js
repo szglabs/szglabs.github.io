@@ -214,9 +214,69 @@
       } else {
         navmenulink.classList.remove('active');
       }
-    })
+    });
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  /**
+   * AJAX Contact Form Handler for Formspree
+   */
+  document.querySelectorAll('form.php-email-form').forEach(form => {
+    form.addEventListener('submit', async function(event) {
+      event.preventDefault();
+
+      const loading = form.querySelector('.loading');
+      const errorMessage = form.querySelector('.error-message');
+      const sentMessage = form.querySelector('.sent-message');
+      const submitBtn = form.querySelector('button[type="submit"]');
+
+      if (errorMessage) errorMessage.style.display = 'none';
+      if (sentMessage) sentMessage.style.display = 'none';
+      if (loading) loading.style.display = 'block';
+      if (submitBtn) submitBtn.disabled = true;
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method || 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (loading) loading.style.display = 'none';
+        if (submitBtn) submitBtn.disabled = false;
+
+        if (response.ok) {
+          if (sentMessage) sentMessage.style.display = 'block';
+          form.reset();
+        } else {
+          const data = await response.json();
+          let msg = 'Oops! There was a problem submitting your form.';
+          if (data && data.errors && data.errors.length) {
+            msg = data.errors.map(err => err.message).join(', ');
+          }
+          if (errorMessage) {
+            errorMessage.textContent = msg;
+            errorMessage.style.display = 'block';
+          } else {
+            alert(msg);
+          }
+        }
+      } catch (error) {
+        if (loading) loading.style.display = 'none';
+        if (submitBtn) submitBtn.disabled = false;
+        if (errorMessage) {
+          errorMessage.textContent = 'Oops! There was a problem connecting to the server. Please try again or email sales@szglabs.com directly.';
+          errorMessage.style.display = 'block';
+        } else {
+          alert('Oops! There was a problem submitting your form.');
+        }
+      }
+    });
+  });
 
 })();
