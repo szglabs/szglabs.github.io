@@ -59,7 +59,7 @@ SZG Labs is CPRA-compliant, GDPR-aware, and does not sell or share customer pers
 - **GitHub**: https://github.com/szglabs
 - **DEV.to**: https://dev.to/szglabs
 - **Hugging Face**: https://huggingface.co/szglabs
-- **Medium**: https://medium.com/@sales_29846
+- **Medium**: https://medium.com/@szglabs
 
 ## Regional Pages
 
