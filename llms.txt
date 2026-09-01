@@ -55,7 +55,7 @@ SZG Labs is CPRA-compliant, GDPR-aware, and does not sell or share customer pers
 - **The Manifest Profile**: https://themanifest.com/company/szg-labs
 - **Crunchbase Profile**: https://www.crunchbase.com/organization/szg-labs
 - **G2 Profile**: https://www.g2.com/sellers/szg-labs
-- **LinkedIn**: https://www.linkedin.com/company/szg-labs
+- **LinkedIn**: https://www.linkedin.com/company/szglabs
 - **GitHub**: https://github.com/szglabs
 - **DEV.to**: https://dev.to/szglabs
 - **Hugging Face**: https://huggingface.co/szglabs
