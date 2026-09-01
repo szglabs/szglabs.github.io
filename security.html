@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Security | SZG Labs</title>
-  <meta name="description" content="Security practices at SZG Labs for infrastructure, data protection, engineering operations, and compliance.">
+  <meta name="description" content="Security architecture, AI governance, cloud infrastructure controls, and data protection practices at SZG Labs, LLC.">
   <link rel="canonical" href="https://szglabs.com/security.html">
 
   <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml">
@@ -27,55 +27,54 @@
   </header>
 
   <main class="main">
-    <section class="section" style="padding-top: 120px;">
+    <section class="section" style="padding-top: 120px; padding-bottom: 80px;">
       <div class="container">
         <div class="section-title">
           <h2>Security at SZG Labs</h2>
-          <p>Effective Date: March 8, 2026</p>
+          <p>Effective Date: September 1, 2026</p>
         </div>
 
-        <p>At SZG Labs, security is not an afterthought. It is built into our architecture and delivery processes. Whether we are building mission-critical Agentic AI workflows, migrating ERP data, or engineering cloud infrastructure, we apply enterprise-grade security controls to protect intellectual property and data integrity.</p>
+        <p>At SZG Labs, security and architectural integrity are fundamental to everything we build. Whether designing autonomous Agentic AI workflows, executing mission-critical Odoo ERP migrations, or deploying cloud data pipelines, we apply enterprise-grade defense-in-depth controls to protect intellectual property, financial data, and system availability.</p>
 
-        <h3>1. Infrastructure and Hosting</h3>
-        <p>Our products and delivery environments are built on Amazon Web Services (AWS), leveraging enterprise cloud controls.</p>
+        <h3>1. Cloud Infrastructure & Hosting Security</h3>
+        <p>Our client environments and internal production architectures are hosted across industry-leading cloud providers, primarily Amazon Web Services (AWS) and Google Cloud Platform (GCP):</p>
         <ul>
-          <li><strong>Physical security:</strong> Cloud provider facilities include controlled access and continuous monitoring.</li>
-          <li><strong>Environment isolation:</strong> Logical separation of customer data and dedicated virtual private cloud boundaries.</li>
-          <li><strong>High availability:</strong> Redundant architecture across multiple availability zones to reduce single points of failure.</li>
+          <li><strong>Network Isolation:</strong> Dedicated Virtual Private Clouds (VPCs), strict security groups, and ingress/egress network access control lists (NACLs).</li>
+          <li><strong>High Availability:</strong> Multi-Availability Zone (Multi-AZ) architecture with automated failover and geo-redundant storage.</li>
+          <li><strong>DDoS Mitigation:</strong> Cloud-native edge protection, automated rate limiting, and web application firewalls (WAF).</li>
         </ul>
 
-        <h3>2. Data Protection</h3>
-        <p>We treat customer data as a critical asset and apply layered protections.</p>
+        <h3>2. Cryptography & Data Protection</h3>
         <ul>
-          <li><strong>Encryption in transit:</strong> TLS 1.2+ for web traffic and secure protocols such as SFTP and AS2 for EDI exchanges.</li>
-          <li><strong>Encryption at rest:</strong> Sensitive data stored on encrypted disk volumes using AES-256.</li>
-          <li><strong>Key management:</strong> Automated, managed key lifecycle controls through cloud KMS services.</li>
+          <li><strong>Encryption in Transit:</strong> All web, API, and administrative communications enforce TLS 1.2 or TLS 1.3 with modern, high-strength cipher suites. Secure protocol standards (SFTP, AS2, HTTPS) are enforced for EDI and ERP data exchanges.</li>
+          <li><strong>Encryption at Rest:</strong> All databases, disk volumes, snapshot backups, and storage buckets enforce AES-256 encryption.</li>
+          <li><strong>Key Management:</strong> Cryptographic keys are managed via AWS Key Management Service (KMS) or Google Cloud KMS with automated key rotation and strict IAM separation.</li>
         </ul>
 
-        <h3>3. Engineering and DevOps Practices</h3>
-        <p>Security is integrated into development and operations from the beginning.</p>
+        <h3>3. AI & Large Language Model (LLM) Governance</h3>
+        <p>For organizations deploying Agentic AI and automated workflows, data sovereignty is paramount:</p>
         <ul>
-          <li><strong>Infrastructure as Code (IaC):</strong> Terraform-managed infrastructure with version control and peer review.</li>
-          <li><strong>Principle of least privilege:</strong> Access to customer environments is scoped to minimum required permissions.</li>
-          <li><strong>MFA enforcement:</strong> Multi-factor authentication required for administrative accounts and sensitive systems.</li>
+          <li><strong>Zero Model Training:</strong> All enterprise AI integrations utilize commercial API agreements that legally prohibit foundation model providers from training or fine-tuning models on client prompts or data.</li>
+          <li><strong>Ephemeral Processing:</strong> AI agent middleware operates on transient data structures. Data is processed in-memory during execution and is never stored on model servers.</li>
+          <li><strong>Prompt & Data Sanitization:</strong> Automated sanitization layers scrub sensitive PII and secrets before payload transmission to inference endpoints.</li>
         </ul>
 
-        <h3>4. Workstation and Internal Security</h3>
+        <h3>4. Financial & Payment Processing Security</h3>
+        <p>All client invoicing, cardholder transactions, and ACH payments are handled through <strong>Zoho Payments</strong> and certified Level 1 PCI-DSS compliant payment gateways. <strong>SZG Labs never stores, processes, or transmits raw credit card numbers or banking passwords on our servers.</strong> All billing data is tokenized and processed through secure, encrypted vaults.</p>
+
+        <h3>5. Engineering Operations & DevOps Hygiene</h3>
         <ul>
-          <li><strong>Device encryption:</strong> Full-disk encryption on engineering workstations.</li>
-          <li><strong>Credential security:</strong> Enterprise password management and hardware-backed security keys for privileged access.</li>
-          <li><strong>Zero-trust approach:</strong> Production data is not stored on local devices; development and testing are performed in controlled environments.</li>
+          <li><strong>Infrastructure as Code (IaC):</strong> Environments are provisioned and versioned using Terraform, ensuring auditable, repeatable, and peer-reviewed infrastructure changes.</li>
+          <li><strong>Principle of Least Privilege (PoLP):</strong> Role-based access control (RBAC) and just-in-time access scoping for all administrative roles and IAM service accounts.</li>
+          <li><strong>Multi-Factor Authentication (MFA):</strong> Hardware-backed security keys or TOTP multi-factor authentication are mandatory across all company accounts, code repositories, and cloud consoles.</li>
+          <li><strong>Endpoint Protection:</strong> Engineering workstations require full-disk encryption (FileVault / BitLocker), auto-locking, and automated security patch management.</li>
         </ul>
 
-        <h3>5. Compliance and Monitoring</h3>
-        <ul>
-          <li><strong>DPA support:</strong> Data Processing Addendum (DPA) available with engagements where required.</li>
-          <li><strong>Regulatory alignment:</strong> Security and privacy practices are designed to support obligations under frameworks such as CCPA and GDPR where applicable.</li>
-          <li><strong>Continuous monitoring:</strong> Automated cloud posture and vulnerability monitoring to detect and address risk.</li>
-        </ul>
+        <h3>6. Compliance & Data Processing Agreements (DPA)</h3>
+        <p>We provide enterprise-ready Data Processing Addenda (DPAs) incorporating Standard Contractual Clauses (SCCs) to support our clients' compliance requirements under GDPR, CCPA, and industry data protection frameworks.</p>
 
-        <h3>6. Contact</h3>
-        <p>For security-related questions, contact <a href="mailto:compliance@szglabs.com">compliance@szglabs.com</a>.</p>
+        <h3>7. Vulnerability Disclosure & Security Contact</h3>
+        <p>If you identify a potential security issue or have questions regarding our security controls, please contact our security team immediately at <a href="mailto:compliance@szglabs.com">compliance@szglabs.com</a>.</p>
       </div>
     </section>
   </main>
