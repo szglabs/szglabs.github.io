@@ -62,6 +62,7 @@ SZG Labs is CPRA-compliant, GDPR-aware, and does not sell or share customer pers
 - **Hugging Face**: https://huggingface.co/szglabs
 - **Medium**: https://medium.com/@szglabs
 - **Better Business Bureau (BBB)**: https://www.bbb.org/us/nv/las-vegas/profile/software-consultants/szg-labs-llc-1086-90095084
+- **Alignable**: https://www.alignable.com/las-vegas-nv/szg-labs
 
 ## Regional Pages
 
