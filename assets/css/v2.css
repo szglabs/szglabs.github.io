@@ -153,14 +153,15 @@ a {
 
 .v2-nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
 .v2-nav-links a {
   color: var(--text-muted);
-  font-size: 0.925rem;
+  font-size: 0.9rem;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .v2-nav-links a:hover {
@@ -179,16 +180,43 @@ a {
   font-size: 0.95rem;
   padding: 0.65rem 1.4rem;
   border-radius: 9999px;
-  box-shadow: 0 4px 20px rgba(56, 189, 248, 0.35);
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
+  white-space: nowrap;
   transition: all 0.25s ease;
 }
 
 .btn-v2-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(56, 189, 248, 0.5);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
   color: #ffffff;
+}
+
+.btn-v2-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.15) 0%, rgba(37, 99, 235, 0.25) 100%);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.45rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(8px);
+}
+
+.btn-v2-nav:hover {
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.35);
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .btn-v2-secondary {
@@ -825,6 +853,25 @@ a {
 }
 
 /* Responsive */
+@media (max-width: 1100px) {
+  .v2-nav-links {
+    gap: 1.1rem;
+  }
+  .v2-nav-links a {
+    font-size: 0.85rem;
+  }
+  .btn-v2-nav {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .v2-nav-links {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
   .swarm-live-canvas {
     grid-template-columns: 1fr;
@@ -850,9 +897,6 @@ a {
 @media (max-width: 640px) {
   .framework-timeline {
     grid-template-columns: 1fr;
-  }
-  .v2-nav-links {
-    display: none;
   }
   .promise-stats {
     grid-template-columns: 1fr;
