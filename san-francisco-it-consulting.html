@@ -1,37 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XECZEMWSLH"></script>
-  <script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XECZEMWSLH"></script>
+<script>
+    // Developer Opt-Out: Visit szglabs.com/?optout=1 to disable tracking on this device
+    if (window.location.search.indexOf('optout=1') !== -1) {
+      localStorage.setItem('szg_ga_optout', 'true');
+      alert('SZG Labs Developer Mode: Google Analytics disabled for this device/browser.');
+    } else if (window.location.search.indexOf('optout=0') !== -1) {
+      localStorage.removeItem('szg_ga_optout');
+      alert('SZG Labs Developer Mode: Google Analytics re-enabled for this device/browser.');
+    }
+    if (localStorage.getItem('szg_ga_optout') === 'true') {
+      window['ga-disable-G-XECZEMWSLH'] = true;
+    }
+
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-XECZEMWSLH');
   </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>San Francisco IT & AI Consulting | SZG Labs</title>
-            <meta name="description" content="Regional senior engineers delivering AI systems integration, ERP implementation, cloud architecture, and data pipelines for San Francisco businesses.">
-  <meta name="keywords" content="San Francisco IT consulting, San Francisco AI consulting, systems integration SF, ERP implementation, cloud architecture, tech consulting, AWS, LLM integration">
 
-  <meta property="og:title" content="San Francisco IT & AI Consulting | Senior Systems Integration | SZG Labs">
-  <meta property="og:description" content="Regional senior engineers delivering AI systems integration, ERP implementation, cloud architecture, and data pipelines for San Francisco businesses.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://szglabs.com/assets/img/social-image.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://szglabs.com/san-francisco-it-consulting.html">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="San Francisco IT & AI Consulting | Senior Systems Integration | SZG Labs">
-  <meta name="twitter:description" content="Regional senior engineers delivering AI systems integration, ERP implementation, cloud architecture, and data pipelines for San Francisco businesses.">
-  <meta name="twitter:image" content="https://szglabs.com/assets/img/social-image.png">
 
-  <link rel="canonical" href="https://szglabs.com/san-francisco-it-consulting.html">
 
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+<!-- High-Precision Modern Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<!-- V2 Stylesheet -->
+<link href="assets/css/v2.css" rel="stylesheet"/>
+<!-- Calendly Widget -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
+<script async="" src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<!-- Structured Data -->
+
+
+
+<title>San Francisco IT &amp; AI Consulting | SZG Labs</title>
+  <meta content="Regional senior engineers delivering AI systems integration, ERP implementation, cloud architecture, and data pipelines for San Francisco businesses." name="description"/>
+  <meta content="San Francisco IT consulting, San Francisco AI consulting, systems integration SF, ERP implementation, cloud architecture, tech consulting, AWS, LLM integration" name="keywords"/>
+  <meta content="San Francisco IT &amp; AI Consulting | Senior Systems Integration | SZG Labs" property="og:title"/>
+  <meta content="Regional senior engineers delivering AI systems integration, ERP implementation, cloud architecture, and data pipelines for San Francisco businesses." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://szglabs.com/assets/img/social-image.png" property="og:image"/>
+  <meta content="image/png" property="og:image:type"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="https://szglabs.com/san-francisco-it-consulting.html" property="og:url"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="San Francisco IT &amp; AI Consulting | Senior Systems Integration | SZG Labs" name="twitter:title"/>
+  <meta content="Regional senior engineers delivering AI systems integration, ERP implementation, cloud architecture, and data pipelines for San Francisco businesses." name="twitter:description"/>
+  <meta content="https://szglabs.com/assets/img/social-image.png" name="twitter:image"/>
+  <link href="https://szglabs.com/san-francisco-it-consulting.html" rel="canonical"/>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -81,478 +122,464 @@
       ]
     }
   </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Do you provide on-site IT and AI consulting in San Francisco?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "SZG Labs is headquartered in Las Vegas, just a short flight away. We provide dedicated, on-site technical consulting, architecture planning, and engineering execution for our San Francisco clients when physical presence is required, seamlessly blending remote engineering with strategic on-site collaboration."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does SZG Labs differ from typical San Francisco managed IT services (MSPs)?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Unlike standard MSPs that focus primarily on helpdesk ticketing and workstation maintenance, SZG Labs delivers senior engineering capacity for complex enterprise systems: AI/LLM integration, custom software, ERP implementation (Odoo), EDI data exchange, and cloud architecture."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What AI integration solutions do you provide for San Francisco businesses?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We build private Retrieval-Augmented Generation (RAG) search using machine learning and artificial intelligence across internal documents, automated booking and supply chain data processing using LLMs, intelligent CRM/ERP assistants, and high-performance data pipelines on AWS."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do we get started with SZG Labs in San Francisco?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You can schedule a free 30-minute consultation directly on our website or contact our engineering team at +1 (702) 530-3654. We will review your technical requirements and define an actionable implementation plan."
-          }
+  </head>
+<body class="v2-body">
+<div class="bg-grid-overlay"></div>
+<div class="ambient-glow"></div>
+<!-- Header -->
+<header class="v2-header">
+<div class="v2-container">
+<div class="v2-nav-wrapper">
+<a aria-label="SZG Labs Home" class="v2-brand" href="index.html">
+<img alt="SZG Labs" class="v2-brand-logo" src="assets/img/logo.svg"/>
+</a>
+<ul class="v2-nav-links">
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#capabilities">Capabilities</a></li>
+<li><a href="#model">Model</a></li>
+<li><a href="#framework">Process</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ul>
+<div style="display: flex; align-items: center; gap: 1rem;">
+<a class="btn-v2-nav" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/szglabs-sales/30min'}); return false;">
+<span>Book Consultation</span>
+<i class="bi bi-arrow-right-short" style="font-size: 1.1rem;"></i>
+</a>
+<button aria-label="Toggle navigation" class="mobile-menu-toggle">
+<i class="bi bi-list"></i>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="v2-hero">
+<div class="v2-container">
+<div class="v2-hero-content">
+<div class="badge-live-pill">
+<span class="pulse-dot"></span>
+<span>AUTONOMOUS ENTERPRISE ARCHITECTURE</span>
+</div>
+<h1 class="v2-hero-title"><span class="gradient-text">IT &amp; AI Consulting for </span><br/><span class="gradient-accent">San Francisco Businesses</span></h1>
+<p class="v2-hero-subtitle">SZG Labs delivers specialized technology consulting to hospitality, retail, logistics, and growing enterprises across the San Francisco metro — with deep senior expertise in AI systems integration, ERP implementations, systems connectivity, and AWS cloud architecture.</p>
+<div class="v2-hero-cta-group">
+<a class="btn-v2-primary" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/szglabs-sales/30min'}); return false;" style="padding: 0.8rem 1.75rem; font-size: 1rem;">
+<span>Schedule Architecture Review</span>
+<i class="bi bi-calendar3"></i>
+</a>
+<a class="btn-v2-secondary" href="#architecture" style="padding: 0.8rem 1.75rem; font-size: 1rem;">
+<span>View Live Swarm Blueprint</span>
+<i class="bi bi-cpu"></i>
+</a>
+</div>
+<div class="trust-bar">
+<div class="trust-item">
+<i class="bi bi-star-fill trust-star"></i>
+<span><strong>Verified on Clutch</strong> (5.0 ★)</span>
+</div>
+<div class="trust-item">
+<i class="bi bi-shield-check" style="color: var(--accent-emerald);"></i>
+<span><strong>Trustpilot Verified</strong> Partner</span>
+</div>
+<div class="trust-item">
+<i class="bi bi-person-check" style="color: var(--accent-cyan);"></i>
+<span><strong>100% US Senior Engineers</strong></span>
+</div>
+<div class="trust-item">
+<i class="bi bi-geo-alt" style="color: var(--accent-violet);"></i>
+<span><strong>Las Vegas, NV</strong> Global HQ</span>
+</div>
+</div>
+</div>
+<!-- Agent Swarm Interactive Schematic (Replaces the Cartoon Clip Art) -->
+<div class="swarm-schematic-card" id="architecture">
+<div class="swarm-card-header">
+<div class="window-dots">
+<span class="window-dot red"></span>
+<span class="window-dot yellow"></span>
+<span class="window-dot green"></span>
+</div>
+<div>SZG_AGENT_SWARM_RUNTIME // PIPELINE: ENTERPRISE-OPS-ORCHESTRATION</div>
+<div style="color: var(--accent-emerald); display: flex; align-items: center; gap: 0.35rem;">
+<span class="pulse-dot"></span> LIVE TTY
+          </div>
+</div>
+<div class="swarm-live-canvas">
+<!-- Col 1: Chat Interfaces (Human-in-the-Loop) -->
+<div class="swarm-column">
+<div class="swarm-column-label">Your Workspace</div>
+<div class="schematic-node active-pulse">
+<div class="node-header">
+<span class="node-tag">CHAT.01</span>
+<span class="node-status">ACTIVE</span>
+</div>
+<div class="node-title">Microsoft Teams</div>
+<div class="node-desc">Direct chat interface with your AI employees</div>
+</div>
+<div class="schematic-node">
+<div class="node-header">
+<span class="node-tag">CHAT.02</span>
+<span class="node-status">MONITORING</span>
+</div>
+<div class="node-title">Slack &amp; Email</div>
+<div class="node-desc">Approve tasks, delegate work, get notified</div>
+</div>
+</div>
+<!-- Connector 1 -->
+<div class="schematic-connector">
+<span>DELEGATE</span>
+<div class="wire-line"></div>
+<i class="bi bi-chevron-right"></i>
+</div>
+<!-- Col 2: The Agentic Swarm Core -->
+<div class="swarm-column">
+<div class="swarm-column-label">AI Employee Swarm</div>
+<div class="swarm-core-box">
+<div class="core-badge">Autonomous Workforce</div>
+<div class="agent-roster">
+<div class="agent-row">
+<span class="agent-name"><i class="bi bi-headset" style="color: var(--accent-cyan);"></i> Triage Agent</span>
+<span class="agent-action">Intent Resolved</span>
+</div>
+<div class="agent-row" style="border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.05);">
+<span class="agent-name"><i class="bi bi-file-earmark-text" style="color: var(--accent-cyan);"></i> Data Entry Agent</span>
+<span class="agent-action" style="color: var(--accent-emerald);"><i class="bi bi-check2"></i> 100% Extracted</span>
+</div>
+<div class="agent-row">
+<span class="agent-name"><i class="bi bi-braces-asterisk" style="color: var(--accent-violet);"></i> Systems Agent</span>
+<span class="agent-action">Executing Task...</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Connector 2 -->
+<div class="schematic-connector">
+<span>OPERATE</span>
+<div class="wire-line"></div>
+<i class="bi bi-chevron-right"></i>
+</div>
+<!-- Col 3: Business Systems -->
+<div class="swarm-column">
+<div class="swarm-column-label">Business Tools</div>
+<div class="schematic-node">
+<div class="node-header">
+<span class="node-tag">SYS.01</span>
+<span class="node-status">SYNCHRONIZED</span>
+</div>
+<div class="node-title">CRM &amp; ERP Data</div>
+<div class="node-desc">Odoo, Salesforce, HubSpot, QuickBooks</div>
+</div>
+<div class="schematic-node">
+<div class="node-header">
+<span class="node-tag">SYS.02</span>
+<span class="node-status">INDEXED</span>
+</div>
+<div class="node-title">Cloud Infra &amp; Docs</div>
+<div class="node-desc">AWS, Sharepoint, Google Workspace</div>
+</div>
+</div>
+</div>
+<div class="swarm-terminal-ticker">
+<div class="ticker-content">
+<span class="ticker-badge">SWARM STATUS: ONLINE</span>
+<span>Last cycle: Received request via Teams, updated CRM, processed invoice in ERP, and replied to user.</span>
+</div>
+<div class="mono-tag" style="color: var(--text-dim);">Latency: 1.2s</div>
+</div>
+</div>
+</div>
+</section>
+<section class="v2-section" id="local-advantage" style="padding-top: 2rem; padding-bottom: 2rem;">
+<div class="v2-container">
+<div class="v2-content-card" style="padding: 2.5rem; text-align: left;">
+<h3 style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.9rem; text-transform: uppercase; margin-bottom: 1rem;">The SZG Labs Advantage in San Francisco</h3>
+<h2 style="color: #fff; margin-bottom: 1.5rem; font-size: 1.8rem;">A Technical Partner Built for This Market</h2>
+<p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">San Francisco is the epicenter of global technology — and one of the most underserved when it comes to senior technical consulting. Most IT firms here focus on managed services and helpdesk support, not deep systems integration, AI adoption, or enterprise software.</p>
+<p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">SZG Labs brings senior engineering expertise to fill the gaps left by traditional agencies. We work directly with business owners, CTOs, and operations leaders — no account managers, no offshore handoffs — delivering senior-level engineering expertise previously only accessible to enterprise companies with large budgets.</p>
+<p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">Whether you are modernizing your supply chain, implementing an ERP, integrating private AI workflows, connecting your retail systems to trading partners, or scaling your cloud infrastructure, we bring the technical depth to get it done right.</p>
+</div>
+</div>
+</section>
+
+<!-- Capabilities Bento Grid -->
+<section class="v2-section" id="capabilities">
+<div class="v2-container">
+<div class="section-head">
+<span class="mono-tag section-tag">Core Competencies</span>
+<h2 class="section-title">Engineered to Replace Operational Chaos</h2>
+<p class="section-subtitle">We offer custom engineering services to enable your business to be highly automated, deploying an agent swarm tailored to your specific operations.</p>
+</div>
+<div class="bento-grid">
+<!-- Bento 1: Agentic AI Swarms (Large 8-col) -->
+<div class="bento-card col-8">
+<div>
+<div class="card-icon-box">
+<i class="bi bi-robot"></i>
+</div>
+<h3 class="card-title">Agentic AI Swarms &amp; Workflow Automation</h3>
+<p class="card-desc">
+              We offer custom engineering services to enable your enterprise to be highly automated. We build and integrate an agent swarm tailored precisely to your operational workflows, seamlessly replacing repetitive manual data entry, cross-system reconciliation, and document routing. Your team stays in control while the swarm executes multi-system transactions 24/7/365 without fatigue or errors.
+            </p>
+</div>
+</div>
+<!-- Bento 2: Odoo ERP (4-col) -->
+<div class="bento-card col-4">
+<div>
+<div class="card-icon-box violet">
+<i class="bi bi-layers-half"></i>
+</div>
+<h3 class="card-title">Odoo ERP Architecture &amp; Rescues</h3>
+<p class="card-desc">
+              Full-lifecycle Odoo ERP implementations, complex data migrations, and emergency rescue engagements. We untangle corrupted data models, custom module conflicts, and broken manufacturing workflows, setting a clean foundation for your custom agent swarms to operate on.
+            </p>
+</div>
+</div>
+<!-- Bento 3: Enterprise EDI (6-col) -->
+<div class="bento-card col-6">
+<div>
+<div class="card-icon-box emerald">
+<i class="bi bi-arrow-left-right"></i>
+</div>
+<h3 class="card-title">High-Throughput EDI &amp; Data Pipelines</h3>
+<p class="card-desc">
+              Custom integration services for reliable data pipelines connecting your business to retail trading partners and 3PL networks. We architect the infrastructure to automate complex enterprise data exchanges directly into your core systems.
+            </p>
+</div>
+</div>
+<!-- Bento 4: DevOps & Cloud Infrastructure (6-col) -->
+<div class="bento-card col-6">
+<div>
+<div class="card-icon-box">
+<i class="bi bi-cloud-check"></i>
+</div>
+<h3 class="card-title">Cloud Infrastructure &amp; DevOps Hardening</h3>
+<p class="card-desc">
+              Production engineering on AWS, container orchestration, and Infrastructure-as-Code. We build continuous deployment pipelines, automated disaster recovery, and high-availability database replication.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Engineering Guarantee & Differentiator -->
+<section class="v2-section" id="model" style="padding-top: 0;">
+<div class="v2-container">
+<div class="promise-banner">
+<div>
+<span class="mono-tag" style="color: var(--accent-cyan); margin-bottom: 0.5rem; display: block;">The Anti-Agency Standard</span>
+<h2 class="promise-title">100% Senior US Engineers. Zero Account Layers.</h2>
+<p class="promise-desc">
+            Traditional agencies pitch you with their executive team and quietly offshore your codebase to junior contractors. At SZG Labs, every architectural blueprint, data migration, and line of code is produced directly by senior practitioners who have scaled real production systems.
+          </p>
+</div>
+<div class="promise-stats">
+<div class="stat-item">
+<div class="stat-number">100%</div>
+<div class="stat-label">Senior Staffed (No Juniors)</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">2–4 Mo</div>
+<div class="stat-label">Typical Full ROI Payback</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">0 USD</div>
+<div class="stat-label">Billed Before Milestone Clear</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">24/7</div>
+<div class="stat-label">Autonomous Agent Uptime</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4-Step Delivery Framework -->
+<section class="v2-section" id="framework">
+<div class="v2-container">
+<div class="section-head">
+<span class="mono-tag section-tag">Execution Rigor</span>
+<h2 class="section-title">How Engagements Actually Work</h2>
+<p class="section-subtitle">We remove risk through milestone-gated initial builds, establishing the foundation for long-term engineering partnerships and dedicated retainers.</p>
+</div>
+<div class="framework-timeline">
+<div class="timeline-step">
+<span class="step-num">PHASE 01</span>
+<h3 class="step-title">Architectural Discovery</h3>
+<p class="step-desc">A deep-dive technical interview to inspect your existing ERP schema, API bottlenecks, and operational pain points.</p>
+</div>
+<div class="timeline-step">
+<span class="step-num">PHASE 02</span>
+<h3 class="step-title">Fixed-Scope Blueprint</h3>
+<p class="step-desc">We deliver a clear SOW via Common Paper with unambiguous milestones, verifiable deliverables, and fixed pricing in USD.</p>
+</div>
+<div class="timeline-step">
+<span class="step-num">PHASE 03</span>
+<h3 class="step-title">Build &amp; Swarm Integration</h3>
+<p class="step-desc">Our senior engineers write the code, deploy the agents, and conduct rigorous end-to-end integration tests in a staging sandbox.</p>
+</div>
+<div class="timeline-step">
+<span class="step-num">PHASE 04</span>
+<h3 class="step-title">Cutover &amp; Retainer</h3>
+<p class="step-desc">Zero-downtime deployment and seamless transition into a dedicated monthly retainer for swarm telemetry, ongoing model tuning, and continuous workflow expansion.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="v2-section" id="faq">
+<div class="v2-container">
+<div class="section-head">
+<span class="mono-tag section-tag">Clarity</span>
+<h2 class="section-title">Frequently Asked Questions</h2>
+</div>
+<div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+<div class="schematic-node" style="padding: 1.5rem; margin-bottom: 1rem;">
+<h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #fff;">Do you provide on-site IT and AI consulting in San Francisco?</h4>
+<p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">SZG Labs is headquartered in Las Vegas, just a short flight away. We provide dedicated, on-site technical consulting, architecture planning, and engineering execution for our San Francisco clients when physical presence is required, seamlessly blending remote engineering with strategic on-site collaboration.</p>
+</div>
+
+<div class="schematic-node" style="padding: 1.5rem; margin-bottom: 1rem;">
+<h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #fff;">How does SZG Labs differ from typical San Francisco managed IT services (MSPs)?</h4>
+<p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Unlike standard MSPs that focus primarily on helpdesk ticketing and printer support, SZG Labs delivers senior engineering capacity for complex enterprise systems: AI/LLM integration, custom software, ERP implementation (Odoo), EDI data exchange, and cloud architecture.</p>
+</div>
+
+<div class="schematic-node" style="padding: 1.5rem; margin-bottom: 1rem;">
+<h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #fff;">What AI integration solutions do you provide for San Francisco businesses?</h4>
+<p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">We build private Retrieval-Augmented Generation (RAG) search using machine learning and artificial intelligence across internal documents, automated booking and supply chain data processing using LLMs, intelligent CRM/ERP assistants, and high-performance data pipelines on AWS.</p>
+</div>
+
+<div class="schematic-node" style="padding: 1.5rem; margin-bottom: 1rem;">
+<h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #fff;">How do we get started with SZG Labs in San Francisco?</h4>
+<p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">You can schedule a free 30-minute consultation directly on our website or contact our engineering team at +1 (702) 530-3654. We will review your technical requirements and define an actionable implementation plan.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="v2-cta-section">
+<div class="v2-container">
+<div class="cta-box">
+<span class="mono-tag section-tag">Take the Next Step</span>
+<h2>Ready to Automate Your Enterprise Operations?</h2>
+<p>Book a direct 30-minute discovery call with our Principal Architect to review your systems architecture and evaluate automation ROI.</p>
+<div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+<a class="btn-v2-primary" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/szglabs-sales/30min'}); return false;" style="padding: 0.85rem 2rem; font-size: 1.05rem;">
+<span>Schedule Discovery Call</span>
+<i class="bi bi-calendar-event"></i>
+</a>
+<a class="btn-v2-secondary" href="mailto:sales@szglabs.com" style="padding: 0.85rem 2rem; font-size: 1.05rem;">
+<span>Contact via Email</span>
+<i class="bi bi-envelope"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="v2-footer">
+<div class="v2-container">
+<div class="footer-grid">
+<div class="footer-col">
+<div style="font-weight: 700; color: #fff; font-size: 1.1rem; margin-bottom: 0.75rem;">SZG LABS, LLC</div>
+<div class="footer-contact-info">
+<p>930 S 4th St, Ste 209 #6239</p>
+<p>Las Vegas, NV 89101</p>
+<p style="margin-top: 0.5rem;">Direct: +1 (702) 530-3654</p>
+<p>sales@szglabs.com</p>
+</div>
+<div class="footer-social" style="margin-top: 1rem;">
+<a aria-label="LinkedIn" href="https://www.linkedin.com/company/szglabs" rel="noopener" target="_blank"><i class="bi bi-linkedin"></i></a>
+<a aria-label="GitHub" href="https://github.com/szglabs" rel="noopener" target="_blank"><i class="bi bi-github"></i></a>
+<a aria-label="Share on X" href="https://twitter.com/share?url=https://szglabs.com&amp;text=Discover%20expert%20engineering%20and%20enterprise%20solutions%20at%20SZG%20Labs!" rel="noopener" target="_blank"><i class="bi bi-twitter-x"></i></a>
+</div>
+</div>
+<div class="footer-col">
+<h4 class="footer-heading">Quick Links</h4>
+<ul class="footer-links-list">
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#capabilities">Capabilities</a></li>
+<li><a href="#model">Engineering Model</a></li>
+<li><a href="#framework">Process</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="security.html">Security</a></li>
+<li><a href="subprocessors.html">Subprocessors</a></li>
+<li><a href="privacy-policy.html">Privacy Policy</a></li>
+<li><a href="terms-of-use.html">Terms of Use</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 class="footer-heading">Service Areas</h4>
+<ul class="footer-links-list">
+<li><a href="las-vegas-it-consulting.html">IT &amp; AI Consulting in Las Vegas</a></li>
+<li><a href="los-angeles-it-consulting.html">IT &amp; AI Consulting in Los Angeles</a></li>
+<li><a href="seattle-it-consulting.html">IT &amp; AI Consulting in Seattle</a></li>
+<li><a href="phoenix-it-consulting.html">IT &amp; AI Consulting in Phoenix</a></li>
+<li><a href="salt-lake-city-it-consulting.html">IT &amp; AI Consulting in Salt Lake City</a></li>
+<li><a href="san-francisco-it-consulting.html">IT &amp; AI Consulting in San Francisco</a></li>
+<li><a href="austin-it-consulting.html">IT &amp; AI Consulting in Austin</a></li>
+<li><a href="dallas-it-consulting.html">IT &amp; AI Consulting in Dallas</a></li>
+<li><a href="new-york-it-consulting.html">IT &amp; AI Consulting in NYC</a></li>
+<li><a href="boston-it-consulting.html">IT &amp; AI Consulting in Boston</a></li>
+<li><a href="washington-dc-it-consulting.html">IT &amp; AI Consulting in Washington D.C.</a></li>
+<li><a href="atlanta-it-consulting.html">IT &amp; AI Consulting in Atlanta</a></li>
+<li><a href="miami-it-consulting.html">IT &amp; AI Consulting in Miami</a></li>
+<li><a href="reno-it-consulting.html">IT &amp; AI Consulting in Reno</a></li>
+<li><a href="boise-it-consulting.html">IT &amp; AI Consulting in Boise</a></li>
+<li><a href="greenville-it-consulting.html">IT &amp; AI Consulting in Greenville</a></li>
+<li><a href="el-paso-it-consulting.html">IT &amp; AI Consulting in El Paso</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 class="footer-heading">Trust &amp; Reviews</h4>
+<ul class="footer-links-list">
+<li><a href="https://clutch.co/profile/szg-labs" rel="noopener" target="_blank">Clutch Profile (5.0 Rating)</a></li>
+<li><a href="https://www.trustpilot.com/review/szglabs.com" rel="noopener" target="_blank">Trustpilot Reviews</a></li>
+<li><a href="https://www.bbb.org/us/nv/las-vegas/profile/software-consultants/szg-labs-llc-1086-90095084" rel="noopener" target="_blank">BBB Accredited</a></li>
+<li><a href="https://www.g2.com/sellers/szg-labs" rel="noopener" target="_blank">G2 Profile</a></li>
+<li><a href="https://www.goodfirms.co/company/szg-labs" rel="noopener" target="_blank">GoodFirms</a></li>
+<li><a href="https://www.crunchbase.com/organization/szg-labs" rel="noopener" target="_blank">Crunchbase</a></li>
+<li><a href="https://dev.to/szglabs" rel="noopener" target="_blank">DEV.to Blog</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+        © 2026 SZG Labs, LLC. All rights reserved.
+      </div>
+</div>
+</footer>
+<!-- Scroll to Top -->
+<a aria-label="Scroll to top" class="scroll-top-btn" href="#" id="scrollTopBtn">
+<i class="bi bi-arrow-up-short"></i>
+</a>
+<script>
+    // Scroll to Top
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+    scrollTopBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mobile Menu Toggle
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.v2-nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-open');
+        const icon = mobileToggle.querySelector('i');
+        if (navLinks.classList.contains('mobile-open')) {
+          icon.className = 'bi bi-x-lg';
+        } else {
+          icon.className = 'bi bi-list';
         }
-      ]
+      });
     }
   </script>
-
-  <!-- Favicons -->
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-  <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- Calendly link widget begin -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <!-- Calendly link widget end -->
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo.svg" alt="SZG Labs company logo">
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#advantage">Advantage</a></li>
-          <li><a href="#industries">Industries</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted flex-md-shrink-0" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/szglabs-sales/30min'}); return false;">Free Consultation</a>
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">IT & AI Consulting for San Francisco Businesses</h1>
-            <p data-aos="fade-up" data-aos-delay="100">SZG Labs delivers specialized technology consulting to hospitality, retail, logistics, and growing enterprises across the San Francisco metro — with deep senior expertise in AI systems integration, ERP implementations, systems connectivity, and AWS cloud architecture.</p>
-            <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
-              <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/szglabs-sales/30min'}); return false;" class="btn-get-started">
-                Book a Call <i class="bi bi-calendar-event-fill"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="Enterprise IT and AI consulting illustration">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Hero Section -->
-
-    <!-- Advantage Section -->
-    <section id="advantage" class="about section">
-      <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h3>The SZG Labs Advantage in San Francisco</h3>
-              <h2>A Technical Partner Built for This Market</h2>
-              <p>San Francisco is the epicenter of global technology — and one of the most underserved when it comes to senior technical consulting. Most IT firms here focus on managed services and helpdesk support, not deep systems integration, AI adoption, or enterprise software.</p>
-              <p>SZG Labs brings senior engineering expertise to fill the gaps left by traditional agencies. We work directly with business owners, CTOs, and operations leaders — no account managers, no offshore handoffs — delivering senior-level engineering expertise previously only accessible to enterprise companies with large budgets.</p>
-              <p>Whether you are modernizing your supply chain, implementing an ERP, integrating private AI workflows, connecting your retail systems to trading partners, or scaling your cloud infrastructure, we bring the technical depth to get it done right.</p>
-            </div>
-          </div>
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img loading="lazy" src="assets/img/about-tech.jpg" class="img-fluid" alt="San Francisco">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Advantage Section -->
-
-    <!-- Pillars Section -->
-    <section class="values section">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card">
-              <h3>100% Senior Engineers</h3>
-              <p>No junior staff on client work. You collaborate directly with practitioners who have shipped enterprise systems.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card">
-              <h3>Local & On-Site</h3>
-              <p>Based in Las Vegas, we provide on-site engagements across San Francisco and the Bay Area when needed.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card">
-              <h3>End-to-End Delivery</h3>
-              <p>Strategy through implementation — one accountable team that owns outcomes.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Pillars Section -->
-
-    <!-- Industries Section -->
-    <section id="industries" class="features section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Who We Serve</h2>
-        <p>San Francisco industries we know</p>
-      </div>
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="feature-box d-flex align-items-start">
-              <i class="bi bi-building me-3"></i>
-              <div>
-                <h3>Hospitality, Gaming & Resorts</h3>
-                <p>Systems integration, vendor connectivity, and operational AI automation for hotels, resorts, entertainment venues, and hospitality groups managing multi-channel guest and vendor workflows.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="feature-box d-flex align-items-start">
-              <i class="bi bi-bag-check me-3"></i>
-              <div>
-                <h3>SaaS & Financial Tech</h3>
-                <p>Trading partner onboarding, ERP implementation (Odoo), EDI pipeline integration, and automated inventory sync for retailers connecting to major distribution networks.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="feature-box d-flex align-items-start">
-              <i class="bi bi-truck me-3"></i>
-              <div>
-                <h3>Logistics, Warehousing & 3PL</h3>
-                <p>Data pipeline design, warehouse management system (WMS) integration, and supply chain automation for distributors and logistics operators throughout the Southwest corridor.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="feature-box d-flex align-items-start">
-              <i class="bi bi-rocket-takeoff me-3"></i>
-              <div>
-                <h3>Startups & Growing Businesses</h3>
-                <p>Scalable cloud architecture on AWS, secure AI/LLM integrations, and robust ERP backbones for growing SF companies that need enterprise capability without bloated overhead.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Industries Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Our Core Service Lines</h2>
-        <p>Specialists, not generalists</p>
-      </div>
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <i class="bi bi-cpu icon"></i>
-              <h3>AI Systems & Intelligent Automation</h3>
-              <p>Architect and implement private Retrieval-Augmented Generation (RAG) search, LLM integrations, document parsing, and agentic workflows connected directly to your business data.</p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <i class="bi bi-diagram-3 icon"></i>
-              <h3>Systems Integration & EDI</h3>
-              <p>Connect core business systems, unify data, and automate data exchange across ERP, WMS, CRM, and trading partners with modern APIs and EDI standards.</p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <i class="bi bi-grid-1x2-fill icon"></i>
-              <h3>Business Platforms & ERP (Odoo)</h3>
-              <p>Plan, implement, customize, and maintain modern ERP platforms tailored to your business workflows, accounting, and supply chain reporting needs.</p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-pink position-relative">
-              <i class="bi bi-cloud-check icon"></i>
-              <h3>Cloud, DevOps & Data Pipelines</h3>
-              <p>Design and manage secure, high-throughput cloud infrastructure on AWS, CI/CD automation, vector databases, and real-time data pipelines.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Services Section -->
-
-    <!-- Differentiators Section -->
-    <section class="features section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>What Sets Us Apart</h2>
-        <p>Built for San Francisco operators</p>
-      </div>
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="feature-box d-flex align-items-start">
-              <i class="bi bi-check-circle me-3"></i>
-              <div>
-                <h3>Specialists, Not Generalists</h3>
-                <p>We concentrate on high-value disciplines — AI systems, cloud architecture, and enterprise integration — rather than generic helpdesk tickets.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="feature-box d-flex align-items-start">
-              <i class="bi bi-check-circle me-3"></i>
-              <div>
-                <h3>Senior Engineers on Every Engagement</h3>
-                <p>You work directly with experienced practitioners. There are no account managers between you and the builders.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="feature-box d-flex align-items-start">
-              <i class="bi bi-check-circle me-3"></i>
-              <div>
-                <h3>Locally Based, Enterprise Capable</h3>
-                <p>Available for on-site collaboration across San Francisco and the Bay Area.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="feature-box d-flex align-items-start">
-              <i class="bi bi-check-circle me-3"></i>
-              <div>
-                <h3>End-to-End Accountability</h3>
-                <p>From scoping through delivery, one team owns the outcome. No handoffs or finger-pointing between vendors.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Differentiators Section -->
-
-    <!-- FAQ Section -->
-    <section id="faq" class="faq section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <p>Questions about our San Francisco IT & AI consulting services</p>
-      </div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-            <div class="faq-container">
-              <div class="faq-item faq-active">
-                <h3><span class="num">1.</span> Do you provide on-site IT and AI consulting in San Francisco?</h3>
-                <div class="faq-content">
-                  <p>SZG Labs is headquartered in Las Vegas, just a short flight away. We provide dedicated, on-site technical consulting, architecture planning, and engineering execution for our San Francisco clients when physical presence is required, seamlessly blending remote engineering with strategic on-site collaboration.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <div class="faq-item">
-                <h3><span class="num">2.</span> How does SZG Labs differ from typical San Francisco managed IT services (MSPs)?</h3>
-                <div class="faq-content">
-                  <p>Unlike standard MSPs that focus primarily on helpdesk ticketing and printer support, SZG Labs delivers senior engineering capacity for complex enterprise systems: AI/LLM integration, custom software, ERP implementation (Odoo), EDI data exchange, and cloud architecture.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <div class="faq-item">
-                <h3><span class="num">3.</span> What AI integration solutions do you provide for San Francisco businesses?</h3>
-                <div class="faq-content">
-                  <p>We build private Retrieval-Augmented Generation (RAG) search using machine learning and artificial intelligence across internal documents, automated booking and supply chain data processing using LLMs, intelligent CRM/ERP assistants, and high-performance data pipelines on AWS.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <div class="faq-item">
-                <h3><span class="num">4.</span> How do we get started with SZG Labs in San Francisco?</h3>
-                <div class="faq-content">
-                  <p>You can schedule a free 30-minute consultation directly on our website or contact our engineering team at +1 (702) 530-3654. We will review your technical requirements and define an actionable implementation plan.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /FAQ Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Start with a senior engineer</p>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-6">
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="200">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>930 S 4th St, Ste 209 #6239</p>
-                  <p>Las Vegas, NV 89101</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 (702) 530-3654</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="400">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>sales@szglabs.com</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="500">
-                  <i class="bi bi-clock"></i>
-                  <h3>Open Hours</h3>
-                  <p>Monday - Saturday</p>
-                  <p>9:00AM - 9:00PM (PST)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <form id="syzygy-email-lv" action="https://formspree.io/f/mqeyzggq" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-                <div class="col-12">
-                  <label for="email" class="form-label">Email Address</label>
-                  <input type="email" id="email" class="form-control" name="email" placeholder="you@example.com" required>
-                </div>
-                <div class="col-12">
-                  <label for="message" class="form-label">Your Project Need</label>
-                  <textarea id="message" class="form-control" name="message" rows="6" placeholder="Describe your integration, ERP, or cloud initiative..." required></textarea>
-                </div>
-                <div class="col-12 text-center">
-                  <div class="loading" style="display: none;">Loading</div>
-                  <div class="error-message" style="display: none;"></div>
-                  <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
-                  <button type="submit">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer">
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-12 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <img src="assets/img/logo.svg" alt="SZG Labs company logo" class="footer-logo">
-          </a>
-          <div class="footer-contact pt-3">
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 (702) 530-3654</span></p>
-            <p><strong>Email:</strong> <span>sales@szglabs.com</span></p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#advantage">Advantage</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#industries">Industries</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#faq">FAQ</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="reno-it-consulting.html">IT & AI Consulting in Reno</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="boise-it-consulting.html">IT & AI Consulting in Boise</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="greenville-it-consulting.html">IT & AI Consulting in Greenville</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="el-paso-it-consulting.html">IT & AI Consulting in El Paso</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="security.html">Security</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="subprocessors.html">Subprocessors</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="terms-of-use.html">Terms of Use</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <h4>Share Our Site</h4>
-          <p>Know a San Francisco operator who needs senior technical leadership? Share this page.</p>
-          <div class="social-links d-flex">
-            <a href="https://twitter.com/share?url=https://szglabs.com/san-francisco-it-consulting.html&text=Senior%20IT%20consulting%20for%20Las%20Vegas%20businesses%20by%20SZG%20Labs" target="_blank" rel="noopener">
-              <i class="bi bi-twitter-x" aria-label="Share on X"></i>
-            </a>
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://szglabs.com/san-francisco-it-consulting.html&title=IT%20Consulting%20in%20Las%20Vegas%20-%20SZG%20Labs" target="_blank" rel="noopener">
-              <i class="bi bi-linkedin" aria-label="Share on LinkedIn"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">SZG Labs, LLC</strong> <span>All Rights Reserved</span></p>
-    </div>
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.v3.js"></script>
 </body>
-
 </html>
