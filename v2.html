@@ -4,6 +4,18 @@
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XECZEMWSLH"></script>
   <script>
+    // Developer Opt-Out: Visit szglabs.com/?optout=1 to disable tracking on this device
+    if (window.location.search.indexOf('optout=1') !== -1) {
+      localStorage.setItem('szg_ga_optout', 'true');
+      alert('SZG Labs Developer Mode: Google Analytics disabled for this device/browser.');
+    } else if (window.location.search.indexOf('optout=0') !== -1) {
+      localStorage.removeItem('szg_ga_optout');
+      alert('SZG Labs Developer Mode: Google Analytics re-enabled for this device/browser.');
+    }
+    if (localStorage.getItem('szg_ga_optout') === 'true') {
+      window['ga-disable-G-XECZEMWSLH'] = true;
+    }
+
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
