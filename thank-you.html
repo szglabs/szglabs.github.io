@@ -1,94 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XECZEMWSLH"></script>
+  <script>
+    if (window.location.search.indexOf('optout=1') !== -1) {
+      localStorage.setItem('szg_ga_optout', 'true');
+      alert('SZG Labs Developer Mode: Google Analytics disabled for this device/browser.');
+    } else if (window.location.search.indexOf('optout=0') !== -1) {
+      localStorage.removeItem('szg_ga_optout');
+      alert('SZG Labs Developer Mode: Google Analytics re-enabled for this device/browser.');
+    }
+    if (localStorage.getItem('szg_ga_optout') === 'true') {
+      window['ga-disable-G-XECZEMWSLH'] = true;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XECZEMWSLH');
+  </script>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Thank You | SZG Labs</title>
   <meta name="description" content="Thank you for booking a consultation with SZG Labs. Our senior engineering team looks forward to connecting with you.">
-  <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://szglabs.com/thank-you.html">
 
-  <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- High-Precision Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      background: radial-gradient(circle at 15% 20%, rgba(91, 181, 255, 0.18), transparent 30%), radial-gradient(circle at 80% 0%, rgba(111, 122, 255, 0.16), transparent 35%), #0c121e;
-      color: #e2e8f0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    .thank-you-card {
-      background: rgba(15, 23, 42, 0.75);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 20px;
-      padding: 48px;
-      backdrop-filter: blur(12px);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-    }
-    .btn-glow {
-      background: linear-gradient(135deg, #38bdf8, #6366f1);
-      color: #ffffff;
-      font-weight: 600;
-      border: none;
-      border-radius: 12px;
-      padding: 14px 28px;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .btn-glow:hover {
-      box-shadow: 0 0 25px rgba(99, 102, 241, 0.6);
-      color: #ffffff;
-      transform: translateY(-2px);
-    }
-  </style>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- V2 Stylesheet -->
+  <link href="assets/css/v2.css" rel="stylesheet">
+
+  <!-- Calendly Widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 
-<body>
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo.svg" alt="SZG Labs company logo">
-      </a>
-      <a class="btn-getstarted flex-md-shrink-0" href="index.html">Back to Home</a>
+<body class="v2-body">
+  <div class="bg-grid-overlay"></div>
+  <div class="ambient-glow"></div>
+
+  <!-- Header -->
+  <header class="v2-header">
+    <div class="v2-container">
+      <div class="v2-nav-wrapper">
+        <a href="index.html" class="v2-brand" aria-label="SZG Labs Home">
+          <img src="assets/img/logo.svg" alt="SZG Labs" class="v2-brand-logo">
+        </a>
+
+        <ul class="v2-nav-links">
+          <li><a href="index.html#architecture">Architecture</a></li>
+          <li><a href="index.html#capabilities">Capabilities</a></li>
+          <li><a href="index.html#model">Model</a></li>
+          <li><a href="index.html#framework">Process</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/szglabs-sales/30min'}); return false;" class="btn-v2-nav">
+            <span>Book Consultation</span>
+            <i class="bi bi-arrow-right-short" style="font-size: 1.1rem;"></i>
+          </a>
+          <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="main my-auto py-5" style="margin-top: 120px;">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-7 text-center">
-          <div class="thank-you-card">
-            <div class="mb-4">
-              <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
-            </div>
-            <h1 class="fw-bold mb-3 text-white">Consultation Request Confirmed!</h1>
-            <p class="lead text-secondary mb-4" style="color: #94a3b8 !important;">
-              Thank you for reaching out to SZG Labs. Your technical consultation request has been received. One of our principal architects will review your project requirements and connect with you at your scheduled time.
-            </p>
-            <div class="d-flex justify-content-center gap-3">
-              <a href="index.html" class="btn-glow">Return to Home</a>
-              <a href="https://calendly.com/szglabs-sales/30min" class="btn btn-outline-light rounded-3 px-4 py-3" style="font-weight: 600;">View Calendar</a>
-            </div>
-          </div>
+  <main class="v2-section" style="padding-top: 150px; padding-bottom: 100px;">
+    <div class="v2-container">
+      <div class="v2-content-card" style="max-width: 720px; margin: 0 auto; text-align: center;">
+        <div style="margin-bottom: 1.5rem;">
+          <i class="bi bi-check-circle-fill" style="font-size: 4rem; color: var(--accent-emerald);"></i>
+        </div>
+        <span class="v2-meta-tag">CONFIRMATION</span>
+        <h1 style="font-size: 2.25rem; margin-bottom: 1.25rem; color: #fff;">Consultation Request Confirmed!</h1>
+        <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.75; margin-bottom: 2.25rem;">
+          Thank you for reaching out to SZG Labs. Your technical consultation request has been received. One of our principal architects will review your project requirements and connect with you at your scheduled time.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="index.html" class="btn-v2-primary" style="padding: 0.85rem 2rem;">
+            <span>Return to Home</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="https://calendly.com/szglabs-sales/30min" target="_blank" rel="noopener" class="btn-v2-secondary" style="padding: 0.85rem 2rem;">
+            <span>View Calendar</span>
+            <i class="bi bi-calendar3"></i>
+          </a>
         </div>
       </div>
     </div>
   </main>
 
-  <footer id="footer" class="footer mt-auto py-4 text-center">
-    <div class="container">
-      <p class="mb-0 text-muted">© 2026 SZG Labs, LLC. All Rights Reserved.</p>
+  <!-- Footer -->
+  <footer class="v2-footer">
+    <div class="v2-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="font-weight: 700; color: #fff; font-size: 1.1rem; margin-bottom: 0.75rem;">SZG LABS, LLC</div>
+          <div class="footer-contact-info">
+            <p>930 S 4th St, Ste 209 #6239</p>
+            <p>Las Vegas, NV 89101</p>
+            <p style="margin-top: 0.5rem;">Direct: +1 (702) 530-3654</p>
+            <p>sales@szglabs.com</p>
+          </div>
+          <div class="footer-social" style="margin-top: 1rem;">
+            <a href="https://www.linkedin.com/company/szglabs" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/szglabs" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://twitter.com/share?url=https://szglabs.com&text=Discover%20expert%20engineering%20and%20enterprise%20solutions%20at%20SZG%20Labs!" target="_blank" rel="noopener" aria-label="Share on X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#capabilities">Capabilities</a></li>
+            <li><a href="index.html#model">Engineering Model</a></li>
+            <li><a href="index.html#framework">Process</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="security.html">Security</a></li>
+            <li><a href="subprocessors.html">Approved Subprocessors</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-use.html">Terms of Use</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Service Areas</h4>
+          <ul class="footer-links-list">
+            <li><a href="las-vegas-it-consulting.html">IT & AI Consulting in Las Vegas</a></li>
+            <li><a href="los-angeles-it-consulting.html">IT & AI Consulting in Los Angeles</a></li>
+            <li><a href="seattle-it-consulting.html">IT & AI Consulting in Seattle</a></li>
+            <li><a href="phoenix-it-consulting.html">IT & AI Consulting in Phoenix</a></li>
+            <li><a href="salt-lake-city-it-consulting.html">IT & AI Consulting in Salt Lake City</a></li>
+            <li><a href="san-francisco-it-consulting.html">IT & AI Consulting in San Francisco</a></li>
+            <li><a href="austin-it-consulting.html">IT & AI Consulting in Austin</a></li>
+            <li><a href="dallas-it-consulting.html">IT & AI Consulting in Dallas</a></li>
+            <li><a href="new-york-it-consulting.html">IT & AI Consulting in NYC</a></li>
+            <li><a href="boston-it-consulting.html">IT & AI Consulting in Boston</a></li>
+            <li><a href="washington-dc-it-consulting.html">IT & AI Consulting in Washington D.C.</a></li>
+            <li><a href="atlanta-it-consulting.html">IT & AI Consulting in Atlanta</a></li>
+            <li><a href="miami-it-consulting.html">IT & AI Consulting in Miami</a></li>
+            <li><a href="reno-it-consulting.html">IT & AI Consulting in Reno</a></li>
+            <li><a href="boise-it-consulting.html">IT & AI Consulting in Boise</a></li>
+            <li><a href="greenville-it-consulting.html">IT & AI Consulting in Greenville</a></li>
+            <li><a href="el-paso-it-consulting.html">IT & AI Consulting in El Paso</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Trust & Reviews</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://clutch.co/profile/szg-labs" target="_blank" rel="noopener">Clutch Profile (5.0 Rating)</a></li>
+            <li><a href="https://www.trustpilot.com/review/szglabs.com" target="_blank" rel="noopener">Trustpilot Reviews</a></li>
+            <li><a href="https://www.bbb.org/us/nv/las-vegas/profile/software-consultants/szg-labs-llc-1086-90095084" target="_blank" rel="noopener">BBB Accredited</a></li>
+            <li><a href="https://www.g2.com/sellers/szg-labs" target="_blank" rel="noopener">G2 Profile</a></li>
+            <li><a href="https://www.goodfirms.co/company/szg-labs" target="_blank" rel="noopener">GoodFirms</a></li>
+            <li><a href="https://www.crunchbase.com/organization/szg-labs" target="_blank" rel="noopener">Crunchbase</a></li>
+            <li><a href="https://dev.to/szglabs" target="_blank" rel="noopener">DEV.to Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 SZG Labs, LLC. All rights reserved.
+      </div>
     </div>
   </footer>
-</body>
 
+  <!-- Scroll to Top -->
+  <a href="#" class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <script>
+    // Scroll to Top
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+    scrollTopBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mobile Menu Toggle
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.v2-nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-open');
+        const icon = mobileToggle.querySelector('i');
+        if (navLinks.classList.contains('mobile-open')) {
+          icon.className = 'bi bi-x-lg';
+        } else {
+          icon.className = 'bi bi-list';
+        }
+      });
+    }
+  </script>
+</body>
 </html>
