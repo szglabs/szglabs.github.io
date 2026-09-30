@@ -1063,8 +1063,10 @@ a {
   background: transparent;
   border: 1px solid var(--border-card);
   color: var(--text-main);
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 8px;
   align-items: center;
   justify-content: center;
@@ -1108,7 +1110,7 @@ a {
   .v2-hero-title { font-size: 2rem; }
   .trust-bar { gap: 1rem; }
   .swarm-card-header { flex-direction: column; text-align: center; }
-  .mobile-menu-toggle { width: 35px; height: 35px; }
+  .mobile-menu-toggle { width: 44px; height: 44px; min-width: 44px; min-height: 44px; }
   .promise-stats .stat-number { font-size: 1.8rem; }
 }
 
