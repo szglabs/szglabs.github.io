@@ -103,17 +103,11 @@
       background: var(--accent-cyan);
       color: #000;
     }
-    .custom-token-input {
-      width: 100%;
-      background: #04060a;
-      border: 1px solid #1e293b;
-      color: #fff;
-      padding: 0.65rem 0.85rem;
-      border-radius: 8px;
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      margin-top: 0.5rem;
-      box-sizing: border-box;
+    .status-msg {
+      font-size: 0.85rem;
+      color: var(--accent-cyan);
+      margin-top: 1rem;
+      display: none;
     }
   </style>
 </head>
@@ -138,15 +132,9 @@
       </svg>
     </button>
 
-    <div style="margin-top: 1.5rem; text-align: left;">
-      <details style="color: var(--text-muted); font-size: 0.85rem;">
-        <summary style="cursor: pointer; color: #64748b;">Manual Link Token Override</summary>
-        <div style="margin-top: 0.5rem;">
-          <label style="display: block; margin-bottom: 0.25rem;">Active Link Token:</label>
-          <input type="text" id="token-input" class="custom-token-input" value="link-production-8aee78b4-35a9-425e-9175-20319650615f">
-        </div>
-      </details>
-    </div>
+    <p id="resuming-msg" class="status-msg">
+      🔄 Completing bank authorization... please wait.
+    </p>
 
     <div id="result-box" class="result-box">
       <div style="display: flex; align-items: center; gap: 0.5rem; color: #4ade80; font-weight: 600; margin-bottom: 0.5rem;">
@@ -172,24 +160,27 @@
 
   <script>
     const launchBtn = document.getElementById('launch-btn');
-    const tokenInput = document.getElementById('token-input');
     const resultBox = document.getElementById('result-box');
     const tokenDisplay = document.getElementById('public-token-text');
     const instLabel = document.getElementById('institution-label');
     const copyBtn = document.getElementById('copy-btn');
     const copiedMsg = document.getElementById('copied-msg');
+    const resumingMsg = document.getElementById('resuming-msg');
 
-    let handler = null;
+    const DEFAULT_LINK_TOKEN = "link-production-8aee78b4-35a9-425e-9175-20319650615f";
 
-    function initPlaid(token) {
-      if (!token) {
-        alert("Please provide a valid Link Token.");
-        return;
-      }
+    function getSavedToken() {
+      return localStorage.getItem('plaid_link_token') || DEFAULT_LINK_TOKEN;
+    }
 
-      handler = Plaid.create({
+    function initAndOpenPlaid(token, redirectUri) {
+      if (!token) return;
+      localStorage.setItem('plaid_link_token', token);
+
+      const config = {
         token: token,
         onSuccess: function(public_token, metadata) {
+          resumingMsg.style.display = 'none';
           resultBox.style.display = 'block';
           tokenDisplay.textContent = public_token;
           const instName = metadata && metadata.institution ? metadata.institution.name : "Your Bank";
@@ -198,18 +189,24 @@
           resultBox.scrollIntoView({ behavior: 'smooth' });
         },
         onExit: function(err, metadata) {
+          resumingMsg.style.display = 'none';
+          launchBtn.style.display = 'flex';
           if (err != null) {
             console.error("Plaid Link error:", err);
           }
         }
-      });
+      };
 
+      if (redirectUri) {
+        config.receivedRedirectUri = redirectUri;
+      }
+
+      const handler = Plaid.create(config);
       handler.open();
     }
 
     launchBtn.addEventListener('click', function() {
-      const token = tokenInput.value.trim();
-      initPlaid(token);
+      initAndOpenPlaid(getSavedToken(), null);
     });
 
     copyBtn.addEventListener('click', function() {
@@ -221,6 +218,14 @@
         }, 3000);
       });
     });
+
+    // Check if returning from OAuth (e.g. Chase redirect)
+    if (window.location.href.includes('oauth_state_id')) {
+      resumingMsg.style.display = 'block';
+      launchBtn.style.display = 'none';
+      const token = getSavedToken();
+      initAndOpenPlaid(token, window.location.href);
+    }
   </script>
 </body>
 </html>
