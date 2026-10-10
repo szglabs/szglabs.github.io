@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XECZEMWSLH"></script>
+  <script>
+    if (window.location.search.indexOf('optout=1') !== -1) {
+      localStorage.setItem('szg_ga_optout', 'true');
+      alert('SZG Labs Developer Mode: Google Analytics disabled for this device/browser.');
+    } else if (window.location.search.indexOf('optout=0') !== -1) {
+      localStorage.removeItem('szg_ga_optout');
+      alert('SZG Labs Developer Mode: Google Analytics re-enabled for this device/browser.');
+    }
+    if (localStorage.getItem('szg_ga_optout') === 'true') {
+      window['ga-disable-G-XECZEMWSLH'] = true;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XECZEMWSLH');
+  </script>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact | SZG Labs</title>
+  <meta name="description" content="Contact SZG Labs. Speak directly with senior systems architects for Enterprise Odoo ERP migrations, Agentic AI swarms, and cloud infrastructure.">
+  <link rel="canonical" href="https://szglabs.com/contact.html">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- High-Precision Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- V2 Stylesheet -->
+  <link href="assets/css/v2.css?v=1.3" rel="stylesheet">
+
+  <!-- Calendly Widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</head>
+
+<body class="v2-body">
+  <div class="bg-grid-overlay"></div>
+  <div class="ambient-glow"></div>
+
+  <!-- Header -->
+  <header class="v2-header">
+    <div class="v2-container">
+      <div class="v2-nav-wrapper">
+        <a href="index.html" class="v2-brand" aria-label="SZG Labs Home">
+          <img src="assets/img/logo.svg" alt="SZG Labs" class="v2-brand-logo">
+        </a>
+
+        <ul class="v2-nav-links">
+          <li><a href="index.html#architecture">Architecture</a></li>
+          <li><a href="index.html#capabilities">Capabilities</a></li>
+          <li><a href="index.html#model">Model</a></li>
+          <li><a href="index.html#framework">Process</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/szglabs-sales/30min'}); return false;" class="btn-v2-nav">
+            <span>Book Consultation</span>
+            <i class="bi bi-arrow-right-short" style="font-size: 1.1rem;"></i>
+          </a>
+          <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="v2-section" style="padding-top: 140px; padding-bottom: 90px;">
+    <div class="v2-container">
+      <div class="section-head" style="text-align: center; max-width: 760px; margin: 0 auto 3rem auto;">
+        <span class="mono-tag section-tag">Direct Access</span>
+        <h1 class="section-title">Connect with Senior Systems Architects</h1>
+        <p class="section-subtitle">No sales layers, account executives, or junior recruiters. You speak directly with senior practitioners who design and build production systems.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 960px; margin: 0 auto 3rem auto;">
+        <!-- Email Card -->
+        <div class="schematic-node" style="padding: 2rem;">
+          <div style="font-size: 2rem; color: var(--accent-cyan); margin-bottom: 1rem;">
+            <i class="bi bi-envelope-check"></i>
+          </div>
+          <h2 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem;">Corporate Inquiries</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">For project RFPs, architectural reviews, or press queries:</p>
+          <a href="mailto:sales@szglabs.com" style="color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; font-size: 1rem; text-decoration: none; font-weight: 600;">sales@szglabs.com</a>
+        </div>
+
+        <!-- Phone Card -->
+        <div class="schematic-node" style="padding: 2rem;">
+          <div style="font-size: 2rem; color: var(--accent-emerald); margin-bottom: 1rem;">
+            <i class="bi bi-telephone-outbound"></i>
+          </div>
+          <h2 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem;">Direct Phone & SMS</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">Immediate engineering advisory and client support:</p>
+          <a href="tel:+17025303654" style="color: var(--accent-emerald); font-family: 'JetBrains Mono', monospace; font-size: 1rem; text-decoration: none; font-weight: 600;">+1 (702) 530-3654</a>
+        </div>
+
+        <!-- HQ Card -->
+        <div class="schematic-node" style="padding: 2rem;">
+          <div style="font-size: 2rem; color: var(--accent-violet); margin-bottom: 1rem;">
+            <i class="bi bi-geo-alt"></i>
+          </div>
+          <h2 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem;">Headquarters</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem;">SZG Labs, LLC</p>
+          <p style="color: var(--text-dim); font-size: 0.9rem; line-height: 1.5; margin: 0;">930 S 4th St, Ste 209 #6239<br>Las Vegas, NV 89101</p>
+        </div>
+      </div>
+
+      <!-- Schedule Discovery Box -->
+      <div class="cta-box" style="max-width: 960px; margin: 0 auto;">
+        <span class="mono-tag section-tag">Live Architecture Review</span>
+        <h2 style="margin-bottom: 0.75rem;">Schedule a 30-Minute Architecture Discovery</h2>
+        <p style="max-width: 600px; margin: 0 auto 1.5rem auto; color: var(--text-muted);">Review your ERP workflows, data pipelines, or automation requirements directly with our Principal Systems Architect.</p>
+        <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/szglabs-sales/30min'}); return false;" class="btn-v2-primary" style="padding: 0.85rem 2rem; font-size: 1.05rem;">
+          <span>Schedule Architecture Review</span>
+          <i class="bi bi-calendar-event"></i>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="v2-footer">
+    <div class="v2-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="font-weight: 700; color: #fff; font-size: 1.1rem; margin-bottom: 0.75rem;">SZG LABS, LLC</div>
+          <div class="footer-contact-info">
+            <p>930 S 4th St, Ste 209 #6239</p>
+            <p>Las Vegas, NV 89101</p>
+            <p style="margin-top: 0.5rem;">Direct: +1 (702) 530-3654</p>
+            <p>sales@szglabs.com</p>
+          </div>
+          <div class="footer-social" style="margin-top: 1rem;">
+            <a href="https://www.linkedin.com/company/szglabs" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/szglabs" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://twitter.com/share?url=https://szglabs.com&text=Discover%20expert%20engineering%20and%20enterprise%20solutions%20at%20SZG%20Labs!" target="_blank" rel="noopener" aria-label="Share on X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#capabilities">Capabilities</a></li>
+            <li><a href="index.html#model">Engineering Model</a></li>
+            <li><a href="index.html#framework">Process</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="security.html">Security</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-use.html">Terms of Use</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Service Areas</h3>
+          <ul class="footer-links-list">
+            <li><a href="las-vegas-it-consulting.html">IT & AI Consulting in Las Vegas</a></li>
+            <li><a href="los-angeles-it-consulting.html">IT & AI Consulting in Los Angeles</a></li>
+            <li><a href="seattle-it-consulting.html">IT & AI Consulting in Seattle</a></li>
+            <li><a href="phoenix-it-consulting.html">IT & AI Consulting in Phoenix</a></li>
+            <li><a href="salt-lake-city-it-consulting.html">IT & AI Consulting in Salt Lake City</a></li>
+            <li><a href="san-francisco-it-consulting.html">IT & AI Consulting in San Francisco</a></li>
+            <li><a href="austin-it-consulting.html">IT & AI Consulting in Austin</a></li>
+            <li><a href="dallas-it-consulting.html">IT & AI Consulting in Dallas</a></li>
+            <li><a href="new-york-it-consulting.html">IT & AI Consulting in NYC</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Trust & Reviews</h3>
+          <ul class="footer-links-list">
+            <li><a href="https://clutch.co/profile/szg-labs" target="_blank" rel="noopener">Clutch Profile (5.0 Rating)</a></li>
+            <li><a href="https://www.trustpilot.com/review/szglabs.com" target="_blank" rel="noopener">Trustpilot Reviews</a></li>
+            <li><a href="https://www.bbb.org/us/nv/las-vegas/profile/software-consultants/szg-labs-llc-1086-90095084" target="_blank" rel="noopener">BBB Accredited</a></li>
+            <li><a href="https://www.g2.com/sellers/szg-labs" target="_blank" rel="noopener">G2 Profile</a></li>
+            <li><a href="https://www.goodfirms.co/company/szg-labs" target="_blank" rel="noopener">GoodFirms</a></li>
+            <li><a href="https://www.crunchbase.com/organization/szg-labs" target="_blank" rel="noopener">Crunchbase</a></li>
+            <li><a href="https://dev.to/szglabs" target="_blank" rel="noopener">DEV.to Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 SZG Labs, LLC. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <a href="#" class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <script>
+    // Scroll to Top
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+    scrollTopBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mobile Menu Toggle
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.v2-nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-open');
+        const icon = mobileToggle.querySelector('i');
+        if (navLinks.classList.contains('mobile-open')) {
+          icon.className = 'bi bi-x-lg';
+        } else {
+          icon.className = 'bi bi-list';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
