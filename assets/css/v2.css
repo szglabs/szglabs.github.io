@@ -253,14 +253,14 @@ a {
    Hero Section
    ========================================================================== */
 .v2-hero {
-  padding: 5rem 0 4rem;
+  padding: 2.75rem 0 2.5rem;
   position: relative;
 }
 
 .v2-hero-content {
   text-align: center;
   max-width: 860px;
-  margin: 0 auto 3.5rem;
+  margin: 0 auto 2rem;
 }
 
 .badge-live-pill {
@@ -269,13 +269,13 @@ a {
   gap: 0.6rem;
   background: rgba(56, 189, 248, 0.08);
   border: 1px solid rgba(56, 189, 248, 0.25);
-  padding: 0.4rem 1rem;
+  padding: 0.35rem 0.9rem;
   border-radius: 9999px;
   color: var(--accent-cyan);
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.05em;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .pulse-dot {
@@ -294,10 +294,10 @@ a {
 }
 
 .v2-hero-title {
-  font-size: clamp(2.5rem, 5.5vw, 4.25rem);
+  font-size: clamp(2.35rem, 5vw, 4rem);
   font-weight: 800;
   line-height: 1.1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.15rem;
 }
 
 .v2-hero-title .gradient-text {
@@ -313,11 +313,11 @@ a {
 }
 
 .v2-hero-subtitle {
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.55;
   max-width: 720px;
-  margin: 0 auto 2.25rem;
+  margin: 0 auto 1.5rem;
   font-weight: 400;
 }
 
@@ -327,7 +327,7 @@ a {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Trust Proof Bar */
@@ -335,9 +335,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.75rem;
   flex-wrap: wrap;
-  padding-top: 1.5rem;
+  padding-top: 1.15rem;
   border-top: 1px solid var(--border-subtle);
   color: var(--text-dim);
   font-size: 0.85rem;
@@ -365,8 +365,8 @@ a {
   align-items: center;
   justify-content: center;
   gap: 0.65rem;
-  margin-top: 1.25rem;
-  padding-top: 1.15rem;
+  margin-top: 0.95rem;
+  padding-top: 0.95rem;
   border-top: 1px dashed rgba(255, 255, 255, 0.08);
   width: 100%;
 }
@@ -392,21 +392,23 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.35rem 0.8rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.4rem 0.85rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 9999px;
-  font-size: 0.75rem;
-  color: var(--text-muted);
+  font-size: 0.78rem;
+  color: var(--text-main);
   text-decoration: none;
   transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .media-badge-pill:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(6, 182, 212, 0.4);
-  color: var(--text-main);
-  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(6, 182, 212, 0.5);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.2);
 }
 
 .media-badge-pill .media-dot {
